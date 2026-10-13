@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پشتگیری — پزیشکی من</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: #F5F8FC;
+      color: #1E2432;
+      line-height: 1.8;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 40px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #EAF2FD;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #1B63C2, #124A96);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      color: #1B63C2;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #7A8699;
+      font-size: 14px;
+    }
+    h2 {
+      color: #1B63C2;
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      padding-right: 12px;
+      border-right: 4px solid #1B63C2;
+    }
+    p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    ul {
+      margin-right: 24px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .info-box {
+      background: #EAF2FD;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 20px 0;
+      border-right: 4px solid #1B63C2;
+    }
+    .contact-card {
+      background: white;
+      border: 1px solid #E3E9F2;
+      border-radius: 14px;
+      padding: 20px;
+      margin: 16px 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+    .contact-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(27,99,194,0.15);
+      border-color: #1B63C2;
+    }
+    .contact-card-icon {
+      width: 48px;
+      height: 48px;
+      background: #EAF2FD;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .contact-card-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #1B63C2;
+      margin-bottom: 6px;
+    }
+    .contact-card-desc {
+      font-size: 13px;
+      color: #7A8699;
+      line-height: 1.6;
+    }
+    .faq-item {
+      background: white;
+      border: 1px solid #E3E9F2;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .faq-question {
+      font-weight: bold;
+      color: #1B63C2;
+      font-size: 15px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-answer {
+      font-size: 14px;
+      color: #1E2432;
+      line-height: 1.7;
+      padding-top: 8px;
+      border-top: 1px solid #F5F8FC;
+      margin-top: 8px;
+    }
+    .info-section {
+      background: linear-gradient(135deg, #1B63C2, #124A96);
+      color: white;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .info-section h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    .info-section p {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      font-size: 14px;
+    }
+    .info-row:last-child {
+      border-bottom: none;
+    }
+    .info-row strong {
+      color: rgba(255,255,255,0.8);
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #E3E9F2;
+      color: #7A8699;
+      font-size: 13px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 17px;
+      }
+      p, li {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ===== سەرەتا ===== -->
+    <div class="header">
+      <div class="logo">💬</div>
+      <h1>پشتگیری</h1>
+      <p class="subtitle">ئەپی "پزیشکی من" — طبيبي</p>
+    </div>
+
+    <!-- ===== پێشەکی ===== -->
+    <div class="info-box">
+      <p><strong>بەخێربێیت بۆ پشتگیری پزیشکی من!</strong></p>
+      <p>ئێمە لێرەین بۆ یارمەتیدانت. ئەگەر پرسیار یان کێشەیەکت هەیە، تکایە لە ڕێگایەک لە ڕێگاکانی ژێرەوە پەیوەندیمان پێوە بکە.</p>
+    </div>
+
+    <!-- ===== پەیوەندی ===== -->
+    <h2>📞 پەیوەندی</h2>
+
+    <a href="mailto:noraconfirming@gmail.com" class="contact-card">
+      <div class="contact-card-icon">📧</div>
+      <div class="contact-card-title">ئیمەیڵ</div>
+      <div class="contact-card-desc">
+        noraconfirming@gmail.com<br>
+        وەڵام لە ماوەی ٢٤-٤٨ کاتژمێر
+      </div>
+    </a>
+
+    <a href="https://wa.me/9647737013035" class="contact-card">
+      <div class="contact-card-icon">💚</div>
+      <div class="contact-card-title">WhatsApp</div>
+      <div class="contact-card-desc">
+        +964 773 701 3035<br>
+        پەیوەندی خێرا لە کاتی کارکردن
+      </div>
+    </a>
+
+    <a href="tel:+9647500000000" class="contact-card">
+      <div class="contact-card-icon">📱</div>
+      <div class="contact-card-title">تەلەفۆن</div>
+      <div class="contact-card-desc">
+        +964 773 701 3035<br>
+        شەممە تا پێنجشەممە: ٩:٠٠ - ١٥:٠٠
+      </div>
+    </a>
+
+    <!-- ===== پرسیاری باو ===== -->
+    <h2>❓ پرسیاری باو</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>چۆن هەژمار دروست بکەم؟</span>
+      </div>
+      <div class="faq-answer">
+        لە پەڕەی سەرەکی، کلیک لە "تۆمارکردن" بکە و زانیارییەکان پڕ بکەوە. بۆ نەخۆش تەنها ناو و ژمارەی مۆبایل پێویستە. بۆ دکتۆر پێویستە کۆدی تایبەتی دکتۆر (DXXXXXX) هەبێت.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>چۆن نۆرە وەربگرم؟</span>
+      </div>
+      <div class="faq-answer">
+        لە پەڕەی سەرەکی، دکتۆرەکە بدۆزەرەوە، کلیک لە پڕۆفایلەکەی بکە، پاشان کلیک لە "داواکاری نۆرە". ڕۆژ و کات هەڵبژێرە و داوای بکە.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>وشەی نهێنیم لەبیر چووە، چی بکەم؟</span>
+      </div>
+      <div class="faq-answer">
+        پەیوەندیمان پێوە بکە بە ئیمەیڵ یان WhatsApp. تیمەکەمان یارمەتیت دەدات بۆ گەڕاندنەوەی ئەکاونتەکەت.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>چۆن ئەکاونتەکەم بسڕمەوە؟</span>
+      </div>
+      <div class="faq-answer">
+        لە پرۆفایل → ڕێکخستنەکان → "سڕینەوەی ئەکاونت" بکە. یان پەیوەندیمان پێوە بکە بۆ ئەوەی تیمەکەمان بیسڕێتەوە.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>ئەپ لە دۆخی Offline کار دەکات؟</span>
+      </div>
+      <div class="faq-answer">
+        بەڵێ! ئەپەکە پشتگیری دۆخی Offline دەکات. دەتوانیت داتا ببینیت و دەستکاری بکەیت، و کاتێک ئینتەرنێت گەڕایەوە، هەموو شتێک بە خۆکاری هەڵدەسوڕێت.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>داتاکانم پارێزراون؟</span>
+      </div>
+      <div class="faq-answer">
+        بەڵێ. ئێمە SSL/TLS encryption بەکاردەهێنین، RLS لە Supabase، و Backup ی ڕۆژانە. تکایە سیاسەتی تایبەتیمان بخوێنەرەوە بۆ زانیاری زیاتر.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>چۆن ببمە دکتۆری سپۆنسەرکراو؟</span>
+      </div>
+      <div class="faq-answer">
+        لە پرۆفایل → "پینکردنی پڕۆفایل" بکە. دوای قبوڵکردنی ئەدمین، پڕۆفایلەکەت لە سەرەوەی لیستی دکتۆرەکان دەردەکەوێت.
+      </div>
+    </div>
+
+    <!-- ===== زانیاری ئەپ ===== -->
+    <div class="info-section">
+      <h3>📱 زانیاری ئەپ</h3>
+      <div class="info-row">
+        <strong>ناوی ئەپ</strong>
+        <span>پزیشکی من</span>
+      </div>
+      <div class="info-row">
+        <strong>وەشان</strong>
+        <span>1.0.0+2</span>
+      </div>
+      <div class="info-row">
+        <strong>دروستکار</strong>
+        <span>محمد جواد (MJK Tech)</span>
+      </div>
+      <div class="info-row">
+        <strong>زمان</strong>
+        <span>کوردی + عەرەبی</span>
+      </div>
+      <div class="info-row">
+        <strong>پلاتفۆرم</strong>
+        <span>Android + iOS + Web</span>
+      </div>
+    </div>
+
+    <!-- ===== کاتی وەڵامدانەوە ===== -->
+    <h2>⏰ کاتی وەڵامدانەوە</h2>
+    <ul>
+      <li><strong>ئیمەیڵ:</strong> ٢٤-٤٨ کاتژمێر</li>
+      <li><strong>WhatsApp:</strong> ٢-٦ کاتژمێر (لە کاتی کارکردن)</li>
+      <li><strong>تەلەفۆن:</strong> یەکسەر (لە کاتی کارکردن)</li>
+    </ul>
+    <p><strong>کاتی کارکردن:</strong> شەممە تا پێنجشەممە، ٩:٠٠ - ١٥:٠٠ (کاتی عێراق)</p>
+
+    <!-- ===== مافی کۆپی ===== -->
+    <div class="footer">
+      <p>© 2026 پزیشکی من — هەموو مافەکان پارێزراون</p>
+      <p style="margin-top: 8px;">دروستکراوە بە ❤️ لە کوردستان</p>
+    </div>
+  </div>
+</body>
+</html>
